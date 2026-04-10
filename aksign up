@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; padding: 20px; background: AliceBlue; }
+        form { background: white; padding: 25px; border-radius: 10px; width: 100%; max-width: 400px; }
+        h2 { margin-top: 0; color:slateGray; }
+        label { display: block; margin: 10px 0 5px; font-weight: bold; font-size: 0.9rem; }
+        input[type="text"], input[type="date"] { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; }
+        .gender-group { margin: 15px 0; display: flex; gap: 10px; align-items: center; }
+        .gender-group label { font-weight: normal; margin: 0; cursor: pointer; }
+        button { width: 100%; padding: 12px; background: #007bff; color: white; border: none; border-radius: 5px; font-size: 1rem; cursor: pointer; margin-top: 20px; }
+        button:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+
+<form>
+    <h2>Sign Up</h2>
+
+    <label>First Name</label>
+    <input type="text" name="fname" required>
+
+    <label>Middle Name</label>
+    <input type="text" name="mname">
+
+    <label>Last Name</label>
+    <input type="text" name="lname" required>
+
+    <label>Date of Birth (Calendar)</label>
+    <input type="date" name="dob" required>
+
+    <label>Gender</label>
+    <div class="gender-group">
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        
+        <input type="radio" id="others" name="gender" value="others">
+        <label for="others">Others</label>
+    </div>
+
+    <button type="submit">Complete Sign Up</button>
+</form>
+
+</body>
+</html>
